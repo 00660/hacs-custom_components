@@ -1,0 +1,22 @@
+recharge:
+  name: 充值电费
+  description: 给智能电费组件充值余额。
+  fields:
+    entity_id:
+      name: 余额实体
+      description: 选择要充值的余额传感器 (例如 sensor.wo_jia_dian_fei_yu_e)。
+      required: true
+      selector:
+        entity:
+          domain: sensor
+          integration: smart_bill
+    amount:
+      name: 金额
+      description: 要充值的金额 (可以是负数进行扣款)。
+      required: true
+      selector:
+        number:
+          min: -10000
+          max: 10000
+          step: 0.01
+          unit_of_measurement: CNY

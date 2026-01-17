@@ -1,0 +1,11 @@
+{
+  "domain": "smart_bill",
+  "name": "国网四川电价",
+  "version": "1.0.0",
+  "documentation": "https://github.com/",
+  "requirements": [],
+  "dependencies": [],
+  "codeowners": [],
+  "iot_class": "local_polling",
+  "config_flow": true
+}
