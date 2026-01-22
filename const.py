@@ -1,5 +1,0 @@
-DOMAIN = "icomon_scale"
-CONF_MAC = "mac_address"
-CONF_HEIGHT = "height"
-CONF_AGE = "age"
-CONF_GENDER = "gender"
