@@ -1,0 +1,73 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "选择 TTS 引擎",
+        "description": "请选择您要配置的服务"
+      },
+      "zai": {
+        "title": "配置 Z.ai TTS",
+        "data": {
+          "token": "授权令牌 (Token)",
+          "user_id": "用户 ID (可选)",
+          "voice_id": "默认角色",
+          "speed": "合成语速 (0.5-2.0)",
+          "smoothing": "衔接柔和度 (ms)",
+          "concurrent": "开启长文本并发分段",
+          "max_concurrency": "最大并发数"
+        }
+      },
+      "qwen": {
+        "title": "配置 Qwen TTS",
+        "data": {
+          "qwen_url": "Gradio 镜像地址",
+          "qwen_voice": "默认角色"
+        }
+      }
+    },
+    "menu": {
+      "zai": "Z.ai TTS (抓包角色/爆音优化)",
+      "qwen": "Qwen TTS (阿里镜像)"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "管理设置",
+        "menu_options": {
+          "modify_base": "基础配置 (Token/语速/平滑度)",
+          "add_voice_id": "引导：添加抓包发音人",
+          "clear_voices": "清空所有抓包角色"
+        }
+      },
+      "modify_base": {
+        "title": "修改基础设置",
+        "data": {
+          "token": "授权令牌",
+          "user_id": "用户 ID (可选)",
+          "voice_id": "默认角色",
+          "speed": "合成语速",
+          "smoothing": "衔接柔和度 (ms)",
+          "concurrent": "开启长文本并发",
+          "max_concurrency": "并发数",
+          "qwen_url": "Gradio 地址",
+          "qwen_voice": "默认角色"
+        }
+      },
+      "add_voice_id": {
+        "title": "第一步：输入 ID",
+        "description": "输入抓包获得的 36 位 UUID",
+        "data": {
+          "v_id": "发音人 ID"
+        }
+      },
+      "add_voice_name": {
+        "title": "第二步：设定名字",
+        "description": "请为 ID: {v_id} 设定一个名字",
+        "data": {
+          "v_name": "发音人名称"
+        }
+      }
+    }
+  }
+}
