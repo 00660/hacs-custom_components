@@ -1,0 +1,54 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Set up doorbell video notification",
+        "description": "When the doorbell is pressed, send a mobile notification containing the selected camera entity live stream plus open and close actions.",
+        "data": {
+          "name": "Name",
+          "doorbell_entity_id": "Doorbell button entity",
+          "camera_entity_id": "Camera entity",
+          "notify_targets": "Mobile notification targets (HA App)",
+          "notification_title": "Notification title",
+          "notification_message": "Notification message",
+          "open_action_title": "Open button label",
+          "open_uri": "Open target URI (blank uses built-in full-screen page)",
+          "notification_tag": "Notification tag",
+          "notification_timeout": "Notification timeout (seconds)",
+          "cooldown_seconds": "Cooldown (seconds)",
+          "trigger_state": "Trigger state"
+        }
+      }
+    },
+    "error": {
+      "notify_targets_required": "Select at least one mobile notification target."
+    },
+    "abort": {
+      "already_configured": "This doorbell entity has already been configured."
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "Edit doorbell video notification",
+        "data": {
+          "name": "Name",
+          "doorbell_entity_id": "Doorbell button entity",
+          "camera_entity_id": "Camera entity",
+          "notify_targets": "Mobile notification targets (HA App)",
+          "notification_title": "Notification title",
+          "notification_message": "Notification message",
+          "open_action_title": "Open button label",
+          "open_uri": "Open target URI (blank uses built-in full-screen page)",
+          "notification_tag": "Notification tag",
+          "notification_timeout": "Notification timeout (seconds)",
+          "cooldown_seconds": "Cooldown (seconds)",
+          "trigger_state": "Trigger state"
+        }
+      }
+    },
+    "error": {
+      "notify_targets_required": "Select at least one mobile notification target."
+    }
+  }
+}

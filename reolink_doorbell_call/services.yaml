@@ -1,0 +1,23 @@
+send_notification:
+  name: 发送门铃通知
+  description: 按指定 config entry 立即发送一次门铃视频通知，用于测试。
+  fields:
+    entry_id:
+      name: Entry ID
+      description: 集成的 config entry ID。
+      required: true
+      example: abc123def456
+      selector:
+        text:
+
+clear_notification:
+  name: 清除门铃通知
+  description: 按指定 config entry 清除手机上的门铃通知。
+  fields:
+    entry_id:
+      name: Entry ID
+      description: 集成的 config entry ID。
+      required: true
+      example: abc123def456
+      selector:
+        text:

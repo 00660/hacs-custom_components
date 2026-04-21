@@ -1,0 +1,54 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "配置门铃视频通知",
+        "description": "当门铃按下时，向手机发送一条包含所选摄像头实体实时视频流的通知，并提供接听跳转和关闭按钮。",
+        "data": {
+          "name": "名称",
+          "doorbell_entity_id": "门铃按键实体",
+          "camera_entity_id": "摄像头实体",
+          "notify_targets": "手机通知目标(HA App)",
+          "notification_title": "通知标题",
+          "notification_message": "通知内容",
+          "open_action_title": "接听按钮文字",
+          "open_uri": "接听跳转路径(留空默认打开插件内大屏页)",
+          "notification_tag": "通知标签",
+          "notification_timeout": "通知超时(秒)",
+          "cooldown_seconds": "触发冷却(秒)",
+          "trigger_state": "触发状态值"
+        }
+      }
+    },
+    "error": {
+      "notify_targets_required": "至少要选择一个手机通知目标。"
+    },
+    "abort": {
+      "already_configured": "这个门铃实体已经配置过了。"
+    }
+  },
+  "options": {
+    "step": {
+      "init": {
+        "title": "编辑门铃视频通知",
+        "data": {
+          "name": "名称",
+          "doorbell_entity_id": "门铃按键实体",
+          "camera_entity_id": "摄像头实体",
+          "notify_targets": "手机通知目标(HA App)",
+          "notification_title": "通知标题",
+          "notification_message": "通知内容",
+          "open_action_title": "接听按钮文字",
+          "open_uri": "接听跳转路径(留空默认打开插件内大屏页)",
+          "notification_tag": "通知标签",
+          "notification_timeout": "通知超时(秒)",
+          "cooldown_seconds": "触发冷却(秒)",
+          "trigger_state": "触发状态值"
+        }
+      }
+    },
+    "error": {
+      "notify_targets_required": "至少要选择一个手机通知目标。"
+    }
+  }
+}
